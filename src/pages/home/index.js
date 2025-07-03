@@ -42,21 +42,15 @@ export const Home = () => {
                   <Link to="/portfolio" className="">
                     <div className="button button_primary">My Portfolio</div>
                   </Link>
-                  {/* <Link to="/contact">
-                    <div className="button button_outline">
-                      Contact Me
-                    </div>
-                  </Link> */}
                   <a
                     href="pdf/Vanzidler_Tatiana_CV_FE.pdf"
                     download
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="button button_outline"
                   >
                     {" "}
-                    <button className="button button_outline">
-                      Download CV
-                    </button>
+                    Download CV
                   </a>
                 </div>
               </div>
