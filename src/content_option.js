@@ -14,7 +14,7 @@ const introdata = {
   },
   description:
     "Creative frontend developer with a fullstack mindset. I build intuitive, performant web applications with React, TypeScript, and Node.js — always focusing on user experience and clean architecture.",
-  your_img_url: "images/main.jpg",
+  your_img_url: "/images/main.jpg",
 };
 
 const dataabout = {
@@ -98,25 +98,25 @@ const dataportfolio = [
     link: "https://househub24.com/en",
   },
   {
-    img: "images/tiktalk.png",
+    img: "/images/tiktalk.png",
     description:
       "TikTalk is a social networking pet project built with Angular, featuring user posts, follower interactions, and real-time chats.",
     link: "https://github.com/TatianaWansiedler/Angular-social-media-app",
   },
   {
-    img: "images/nikel.png",
+    img: "/images/nikel.png",
     description: "Mobile app Development",
     link: "https://www.nikel.studio/",
   },
 
   {
-    img: "images/shop.png",
+    img: "/images/shop.png",
     description:
       "Shop is a pet project e-commerce application built with React, offering product listings, a shopping cart, and a streamlined checkout experience.",
     link: "https://tatianawansiedler.github.io/shop_app/#/",
   },
   {
-    img: "images/trood.png",
+    img: "/images/trood.png",
     description:
       "Trood is a software engine and the ecosystem for tech product launch and scaling",
     link: "https://trood.com/",
