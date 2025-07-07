@@ -1,0 +1,21 @@
+.resume-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 14px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 9999;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  box-shadow: 0 3px 10px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+.resume-button:hover {
+  color: var(--primary-color);
+  box-shadow: 0 6px 20px var(--shadow-color);
+}

@@ -31,7 +31,6 @@
     color: var(--text-color-2);
     line-height: 2;
     height: 50px;
-    font-weight: bold;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -207,4 +206,27 @@
     color: var(--text-color-2);
     margin-right: 10px;
     text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .site__navigation {
+    display: none !important;
+  }
+}
+
+.desktop__nav {
+  gap: 1.5rem;
+}
+
+.desktop__nav {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.desktop__nav a:hover {
+  color: var(--text-color-3);
+}
+
+a.active_link {
+  color: var(--text-color-3);
 }

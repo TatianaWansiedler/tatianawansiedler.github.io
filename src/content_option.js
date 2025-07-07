@@ -135,8 +135,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: "https://github.com/TatianaWansiedler",
   linkedin: "https://www.linkedin.com/in/tatiana-wansiedler/",
+  github: "https://github.com/TatianaWansiedler",
   telegram: "https://t.me/tvanzidler",
 };
 export {

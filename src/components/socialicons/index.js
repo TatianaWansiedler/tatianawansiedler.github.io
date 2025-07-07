@@ -11,9 +11,11 @@ import {
   FaSnapchatGhost,
   FaTiktok,
   FaCircle,
-  FaTelegram
+  FaTelegram,
 } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
 import { socialprofils } from "../../content_option";
+import { useLocation } from "react-router-dom";
 
 const ICON_MAPPING = {
   default: FaCircle,
@@ -26,12 +28,16 @@ const ICON_MAPPING = {
   twitter: FaTwitter,
   twitch: FaTwitch,
   youtube: FaYoutube,
-  telegram: FaTelegram
+  telegram: FaTelegram,
+  email: MdAlternateEmail,
 };
 
 export const Socialicons = (params) => {
+  const { pathname } = useLocation();
   return (
-    <div className="stick_follow_icon">
+    <div
+      className={`stick_follow_icon ${pathname === "/contact" ? "d-none" : ""}`}
+    >
       <ul>
         {Object.entries(socialprofils).map(([platform, url]) => {
           const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;

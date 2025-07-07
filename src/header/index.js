@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
@@ -37,9 +37,39 @@ const Headermain = () => {
               </svg>
             </span>
           </Link>
+
           <div className="d-flex align-items-center">
+            <nav className="desktop__nav d-none d-md-flex nav_ac">
+              <NavLink
+                to="/"
+                className={({ isActive }) => `${isActive ? "active_link" : ""}`}
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) => `${isActive ? "active_link" : ""}`}
+              >
+                Portfolio
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => `${isActive ? "active_link" : ""}`}
+              >
+                About
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) => `${isActive ? "active_link" : ""}`}
+              >
+                Contact
+              </NavLink>
+            </nav>
             <Themetoggle />
-            <button className="menu__button  nav_ac" onClick={handleToggle}>
+            <button
+              className="menu__button nav_ac d-md-none"
+              onClick={handleToggle}
+            >
               {!isActive ? <VscClose /> : <VscGrabber />}
             </button>
           </div>
@@ -70,12 +100,12 @@ const Headermain = () => {
                       About
                     </Link>
                   </li>
-                  <li className="menu_item">
+                  {/* <li className="menu_item">
                     <Link onClick={handleToggle} to="/contact" className="my-3">
                       {" "}
                       Contact
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -97,7 +127,7 @@ const Headermain = () => {
                 Github
               </a>
             </div>
-            <p className="copyright m-0">copyright __ {logotext}</p>
+            {/* <p className="copyright m-0">copyright __ {logotext}</p> */}
           </div>
         </div>
       </header>

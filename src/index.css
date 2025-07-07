@@ -4,8 +4,9 @@
   --secondary-color: #ccc5b9;
   --text-color: #fffcf2;
   --text-color-2: #f2e9df;
-  --text-color-3: #eb5e28; /* акцент */
+  --text-color-3: #eb5e28;
   --overlay-color: rgba(37, 36, 34, 0.6);
+  --shadow-color: rgba(255, 252, 242, 0.3);
 }
 
 [data-theme="light"] {
@@ -16,6 +17,8 @@
   --text-color-2: #262626;
   --text-color-3: #eb5e28;
   --overlay-color: rgba(255, 252, 242, 0.7);
+    --shadow-color: rgba(0, 0, 0, 0.5);
+
 }
 
 * {
@@ -94,6 +97,14 @@ p {
   background: var(--secondary-color);
   color: var(--primary-color);
 }
+.button_primary:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
 .button_outline {
   color: var(--secondary-color);
+}
+.button_outline:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
